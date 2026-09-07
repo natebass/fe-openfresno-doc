@@ -11,7 +11,7 @@ export default defineMain({
   framework: "@storybook/nextjs-vite",
   stories: ["../src/stories/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: ["@storybook/addon-docs", "@storybook/addon-a11y", "@storybook/addon-vitest"],
-  staticDirs: ["../public"],
+  staticDirs: ["../public", { from: "./public", to: "/.storybook/public" }],
   features: {
     experimentalTestSyntax: true,
   },
