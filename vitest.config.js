@@ -41,7 +41,6 @@ export default defineConfig({
  *   - Limitations: no real rendering engine, no CSS layout, no canvas/WebGL.
  *
  * @property {string} resolve.alias.@ - Every project should contain its own alias to prevent conflicts.
- * @property {"automatic"|"classic"} esbuild.jsx - JSX transform mode (so that you don't have to import React).
  * @property {string} test.name - Project name shown in CLI.
  * @property {"jsdom"|"node"|"happy-dom"} test.environment - Use JSDOM.
  * @property {string[]} test.include - Glob patterns for test files.
@@ -55,9 +54,6 @@ export function createUnitProject() {
       alias: {
         "@": path.resolve(import.meta.dirname, "./src"),
       },
-    },
-    esbuild: {
-      jsx: "automatic",
     },
     test: {
       name: "unit",

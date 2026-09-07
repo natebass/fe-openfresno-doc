@@ -1,4 +1,4 @@
-const moment = require("moment");
+import moment from "moment";
 
 export const getWednesday = (nextMonth) => {
   let currentMonth = nextMonth ? moment().month() + 1 : moment().month();

@@ -1,21 +1,16 @@
 import MDXComponents from "./MDXComponents.js";
 import GeneralSection from "@/components/general-section.jsx";
 import { SectionType } from "@/utility/constants/theme.js";
-import fs from "fs";
+import fs from "node:fs";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
-import path from "path";
+import path from "node:path";
 
 function extractToc(content) {
-  const headers = [];
-  const headerRegex = /^###\s+(.+)$/gm;
-  let match;
-  while ((match = headerRegex.exec(content)) !== null) {
-    const text = match[1];
-    const slug = text.toLowerCase().replace(/\s/g, "_");
-    headers.push({ text, slug });
-  }
-  return headers;
+  return Array.from(content.matchAll(/^###\s+(.+)$/gm), ([, text]) => ({
+    text,
+    slug: text.toLowerCase().replaceAll(/\s/g, "_"),
+  }));
 }
 
 const rootDir = path.join(process.cwd(), "src", "app", "(default)", "faq");

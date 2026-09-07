@@ -15,10 +15,8 @@ import { jsonResponse } from "@/utility/response.js";
 import { useState } from "react";
 import useSWR from "swr";
 
-const fetcher = (...args) =>
-  fetch(...args)
-    .then(jsonResponse)
-    .then(fetchGithubSingleProject);
+const fetcher = async (...args) =>
+  fetchGithubSingleProject(await jsonResponse(await fetch(...args)));
 
 /**
  * Page for displaying a single project
@@ -35,8 +33,8 @@ export default function SingleProject({ githubFullName, sectionType = SectionTyp
   );
 
   if (data && !contributeAs && data.meta.contributing) {
-    const keys = Object.keys(data.meta.contributing);
-    if (keys.length > 0) setContributeAs(keys[0]);
+    const [firstRole] = Object.keys(data.meta.contributing);
+    if (firstRole) setContributeAs(firstRole);
   }
 
   if (error) return <div>failed to load</div>;

@@ -1,6 +1,6 @@
 const MDXComponents = {
   h3: ({ children }) => {
-    const idText = children.replace(/ /g, "_").toLowerCase();
+    const idText = children.replaceAll(" ", "_").toLowerCase();
     return (
       <h3 id={idText} className="mb-6 text-xl font-bold">
         {children}

@@ -15,33 +15,27 @@ export default function SingleProjectsBrief({ data, sectionType = SectionType.li
   const concatLists = [["communications", "channels"]];
   const toConcatList = concatLists.flat();
   const meta = {};
-  Object.keys(data.meta).forEach((key) => {
-    if (trimList.indexOf(key) === -1) {
-      if (toConcatList.indexOf(key) === -1) {
-        if (titleCaseList.indexOf(key) === -1) {
-          meta[key] = data.meta[key];
-        } else {
-          meta[key] = titleCase(data.meta[key]);
-        }
-      } else {
-        for (const concatList of concatLists) {
-          if (concatList.indexOf(key) === -1) continue;
-          const [a, b] = concatList;
-          if (data.meta[a] && data.meta[b]) {
-            meta[a + "\\n" + b] = (
-              <>
-                {data.meta[a]}
-                <br />
-                {data.meta[b]}
-              </>
-            );
-          } else {
-            meta[key] = data.meta[key];
-          }
-          break;
-        }
-      }
+  for (const [key, value] of Object.entries(data.meta)) {
+    if (trimList.includes(key)) continue;
+
+    if (!toConcatList.includes(key)) {
+      meta[key] = titleCaseList.includes(key) ? titleCase(value) : value;
+      continue;
     }
-  });
+
+    const concatList = concatLists.find((list) => list.includes(key));
+    const [a, b] = concatList;
+    if (data.meta[a] && data.meta[b]) {
+      meta[`${a}\\n${b}`] = (
+        <>
+          {data.meta[a]}
+          <br />
+          {data.meta[b]}
+        </>
+      );
+    } else {
+      meta[key] = value;
+    }
+  }
   return <ProjectInformationSection obj={meta} title={"Project Brief"} sectionType={sectionType} />;
 }

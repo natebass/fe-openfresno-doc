@@ -4,9 +4,10 @@ import { SectionType } from "@/utility/constants/theme.js";
 
 // See https://nextjs.org/docs/app/api-reference/functions/generate-static-params
 export async function generateStaticParams() {
-  const ghResponses = await fetch(
+  const response = await fetch(
     `https://api.github.com/orgs/${githubOwner}/repos?per_page=21&sort=updated&direction=desc`,
-  ).then((res) => res.json());
+  );
+  const ghResponses = await response.json();
 
   if (!Array.isArray(ghResponses)) {
     console.error("GitHub API error:", ghResponses);
