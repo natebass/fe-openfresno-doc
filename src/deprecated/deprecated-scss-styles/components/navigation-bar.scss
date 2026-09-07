@@ -131,12 +131,11 @@ It is made up of three sections.
   }
 
   &--collapsed {
-    background: url("/src/assets/img/navbar/chevron_down.svg") no-repeat center right;
-    padding-right: 30px;
+    background: url("/src/assets/img/navbar/chevron_down.svg") no-repeat right center;    padding-right: 30px;
   }
 
   &--extended {
-    background: url("/src/assets/img/navbar/chevron_down.svg") no-repeat center right;
+    background: url("/src/assets/img/navbar/chevron_down.svg") no-repeat right center;
     padding-right: 30px;
   }
 
