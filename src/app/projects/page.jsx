@@ -1,6 +1,6 @@
 import Projects from "./projects";
 import Layout from "@/components/layout/layout";
-import { githubOwner } from "@/utility/constants/app-data";
+import { githubOwner } from "@/utility/constants/appData.js";
 
 export default function Page() {
   return (

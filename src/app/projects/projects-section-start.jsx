@@ -4,7 +4,7 @@ import clockIcon from "@/../public/img/meeting-card/clock.svg";
 import documentIcon from "@/../public/img/meeting-card/document-txt.svg";
 import HeaderUnderline from "@/components/ui/header-underline.jsx";
 import { SectionType } from "@/utility/constants/theme";
-import { getWednesday } from "@/utility/get-wednesday";
+import { getWednesday } from "@/utility/getWednesday.js";
 import Image from "next/image";
 import Link from "next/link";
 
