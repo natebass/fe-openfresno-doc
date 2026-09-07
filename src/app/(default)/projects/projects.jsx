@@ -8,8 +8,7 @@ import { jsonResponse } from "@/utility/response.js";
 import { useState } from "react";
 import useSWR from "swr";
 
-const fetcher = async (...args) =>
-  fetchGithubProjectData(await jsonResponse(await fetch(...args)));
+const fetcher = async (...args) => fetchGithubProjectData(await jsonResponse(await fetch(...args)));
 
 /**
  * Page for information about how to pitch a project.
