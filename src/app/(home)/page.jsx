@@ -1,13 +1,13 @@
 import Layout from "../../components/layout/layout";
 import Button from "../../components/ui/button/button.jsx";
 import Timeline from "../../components/ui/timeline/timeline.jsx";
-import logoBlue from "@/assets/logo/logo-blue.svg";
 import trashAi from "@/assets/img/TrashAI2.png";
 import fresnoTowerCircle from "@/assets/img/fresno_tower_circle.png";
 import homeImage from "@/assets/img/home/home3.png";
 import learningBlocks from "@/assets/img/home/learningblocks.jpg";
 import openSacramento from "@/assets/img/partnership-icons/open-sacramento-black-transparent.svg";
 import rootAccess from "@/assets/img/partnership-icons/root-access-white-transparent.svg";
+import logoBlue from "@/assets/logo/logo-blue.svg";
 import GeneralSection from "@/components/general-section.jsx";
 import ImageSection from "@/components/image-section.jsx";
 import { SectionType } from "@/utility/constants/theme";

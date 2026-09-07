@@ -4,7 +4,7 @@
 
 #### Next.js
 
-- [`next.config.js`](https://nextjs.org/docs/app/api-reference/next-config-js) - Configuration file for Next.js
+- [`next.config.mjs`](https://nextjs.org/docs/app/api-reference/next-config-js) - Configuration file for Next.js
 - [`package.json`](https://nextjs.org/docs/getting-started/installation#manual-installation) - Project dependencies and
   scripts
 - [`instrumentation.ts`](https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation) -

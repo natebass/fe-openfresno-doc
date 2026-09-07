@@ -9,7 +9,7 @@ testing UI components in isolation before they are integrated into the main site
 
 ## Requirements
 
-- Node.js 24.0.0 or higher
+- Node.js 24 or higher
 
 ## Prerequisite
 

@@ -1,5 +1,5 @@
-import Slider from "@/components/ui/slider.jsx";
 import SimpleDialog from "@/components/ui/simple-dialog.jsx";
+import Slider from "@/components/ui/slider.jsx";
 import { SectionType } from "@/utility/constants/theme.js";
 import Image from "next/image";
 import { useState } from "react";

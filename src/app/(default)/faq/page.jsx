@@ -1,9 +1,9 @@
 import MDXComponents from "./MDXComponents.js";
 import GeneralSection from "@/components/general-section.jsx";
 import { SectionType } from "@/utility/constants/theme.js";
-import fs from "node:fs";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
+import fs from "node:fs";
 import path from "node:path";
 
 function extractToc(content) {

@@ -86,7 +86,7 @@ export default function Footer() {
           <div className="caption-footer">Open Fresno</div>
           <div className="caption-regular-uppercase space-x-10">
             <Link href="/get-started">Get started</Link>
-            <Link href="/src/app/(default)/about/#team">Our team</Link>
+            <Link href="/about/#team">Our team</Link>
             <Link href="/code-of-conduct">Code of conduct</Link>
           </div>
         </div>

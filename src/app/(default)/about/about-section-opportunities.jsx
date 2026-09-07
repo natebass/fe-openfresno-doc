@@ -1,5 +1,5 @@
-import rectangleBlue from "@/assets/img/about/rectangle-blue.png";
 import AboutSectionPositionList from "@/app/(default)/about/components/about-section-position-list.jsx";
+import rectangleBlue from "@/assets/img/about/rectangle-blue.png";
 import Blurb from "@/components/ui/blurb.jsx";
 import HeadingPair from "@/components/ui/heading-pair.jsx";
 import { SectionType } from "@/utility/constants/theme.js";

@@ -1,4 +1,4 @@
-import getBasePath from "./src/integrations/gh-pages/getBasePath.js";
+import getBasePath from "./src/integrations/gh-pages/getBasePath.mjs";
 import createMDX from "@next/mdx";
 
 const basePath = getBasePath();

@@ -1,4 +1,5 @@
 import { useDragScroll } from "@/app/_hooks/useDragScroll.js";
+import towerBridge from "@/assets/img/tower-bridge.jpg";
 import Button from "@/components/ui/button/button.jsx";
 import { SectionType } from "@/utility/constants/theme.js";
 import { titleCase } from "@/utility/string.js";
@@ -10,7 +11,7 @@ export default function ProjectCard({
   projectStatus,
   projectTitle,
   projectText,
-  imgUrl = "/img/tower-bridge.jpg",
+  imgUrl = towerBridge,
   pageUrl,
   githubUrl,
   tags,
@@ -29,7 +30,7 @@ export default function ProjectCard({
         </div>
         <Image
           className="project-card-image"
-          src={imgUrl}
+          src={imgUrl || towerBridge}
           alt={projectTitle || "Project image"}
           width={350}
           height={200}

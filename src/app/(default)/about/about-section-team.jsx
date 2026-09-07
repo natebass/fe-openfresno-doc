@@ -1,7 +1,7 @@
+import AboutSectionTeamMember from "@/app/(default)/about/components/about-section-team-member.jsx";
 import danFey from "@/assets/img/about/dan_fey.jpg";
 import maryFeyNorris from "@/assets/img/about/mary_fey_norris.jpg";
 import nateBass from "@/assets/img/about/nate_bass.jpg";
-import AboutSectionTeamMember from "@/app/(default)/about/components/about-section-team-member.jsx";
 import { SectionType } from "@/utility/constants/theme.js";
 
 const TEAM_MEMBERS = [

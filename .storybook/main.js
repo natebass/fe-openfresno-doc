@@ -1,5 +1,5 @@
 import { defineMain } from "@storybook/nextjs-vite/node";
-import getBasePath from "../src/integrations/gh-pages/getBasePath.js";
+import getBasePath from "../src/integrations/gh-pages/getBasePath.mjs";
 
 const basePath = getBasePath();
 const srcPath = new URL("../src/", import.meta.url).pathname;
@@ -11,7 +11,7 @@ export default defineMain({
   framework: "@storybook/nextjs-vite",
   stories: ["../src/stories/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: ["@storybook/addon-docs", "@storybook/addon-a11y", "@storybook/addon-vitest"],
-  staticDirs: ["../public", { from: "./public", to: "/.storybook/public" }],
+  staticDirs: ["../public", { from: "./public", to: "/storybook-assets" }],
   features: {
     experimentalTestSyntax: true,
   },
