@@ -1,5 +1,5 @@
 import preview from "#.storybook/preview.js";
-import ProjectInformationSection from "@/app/projects/project-information-section.jsx";
+import ProjectInformationSection from "@/app/(default)/projects/project-information-section.jsx";
 import { expect } from "storybook/test";
 
 const sampleProject = {

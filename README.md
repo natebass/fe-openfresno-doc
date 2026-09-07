@@ -1,7 +1,7 @@
 # Open Fresno documentation
 
-This repository is for documenting, testing, and experimenting with the Open Fresno website. It provides a sandbox
-for testing UI components in isolation before they are integrated into the main site.
+This repository is for documenting, testing, and experimenting with the Open Fresno website. It provides a sandbox for
+testing UI components in isolation before they are integrated into the main site.
 
 > [!NOTE]
 > If you are looking for the Open Fresno website,
@@ -40,20 +40,21 @@ pnpm dev
 
 > [!TIP]
 > The code should be periodically kept up to date with the main repository by manually copy/pasting the `src/` folder.
-> See the [sync guide](https://openfresno.github.io/fe-openfresno-doc/?path=/docs/project-develop-developer-guide--docs).
+> See
+> the [sync guide](https://openfresno.github.io/fe-openfresno-doc/?path=/docs/project-develop-developer-guide--docs).
 
 ## Test
 
 This website primarily uses Storybook. It is also a home for a bigger test suite using Vitest and Playwright. For more
-information see
-the [testing guide](https://openfresno.github.io/fe-openfresno-doc/?path=/docs/project-test--docs).
+information see the [testing guide](https://openfresno.github.io/fe-openfresno-doc/?path=/docs/project-test--docs).
 
 > [!WARNING]
 > Critical tests should be included in the main website repository for use in the CI/CD pipeline.
 
 ## Deploy
 
-The Storybook documentation website is deployed to GitHub pages. See [deploy-gh-pages.yml](.github/workflows/deploy-gh-pages.yml).
+The Storybook documentation website is deployed to GitHub pages.
+See [deploy-gh-pages.yml](.github/workflows/deploy-gh-pages.yml).
 
 ## Resources
 

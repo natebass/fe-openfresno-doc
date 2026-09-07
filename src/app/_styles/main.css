@@ -2,7 +2,7 @@
 @import "./layout.css";
 @import "./general.css";
 @import "./about.css";
-@import "../faq/faq.css";
+@import "../(default)/faq/faq.css";
 @import "./contact.css";
 @import "../../components/layout/footer.css";
 @import "../../components/layout/navbar.css";
@@ -11,7 +11,7 @@
 @import "../../components/ui/timeline/timeline.css";
 @import "../../components/ui/steps/steps.css";
 @import "../(home)/home.css";
-@import "../projects/projects.css";
+@import "../(default)/projects/projects.css";
 @import "keen-slider/keen-slider.min.css";
 /* Include all styles here 👆. PostCSS will bundle this into 1 file. */
 

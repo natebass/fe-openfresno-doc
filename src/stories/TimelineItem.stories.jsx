@@ -1,5 +1,5 @@
 import preview from "#.storybook/preview.js";
-import { TimelineItem, SimpleButton } from "@/components/ui/timeline/timeline-item.jsx";
+import { SimpleButton, TimelineItem } from "@/components/ui/timeline/timeline-item.jsx";
 import PageContainer from "@/components/page-container.jsx";
 import { expect, fn } from "storybook/test";
 
