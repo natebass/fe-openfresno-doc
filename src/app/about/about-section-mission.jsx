@@ -1,4 +1,4 @@
-import openDataDay from "@/../public/img/open_data_day_curved_blue.png";
+import openDataDay from "@/assets/img/open_data_day_curved_blue.png";
 import ImageSection from "@/components/image-section.jsx";
 import { SectionType } from "@/utility/constants/theme";
 

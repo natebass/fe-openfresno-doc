@@ -1,29 +1,24 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
-.get-started-bottom {
+.side-section {
   position: relative;
   margin: auto;
-  background-image: url("/img/about/rectangle.png");
+  background-image: url("/src/assets/img/about/rectangle.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media (min-width: variables.$screen-lg) {
-    display: none;
-  }
-
   @media (max-width: variables.$screen-sm) {
-    width: 100%;
+    width: 90vw;
   }
 }
 
-.get-started-bottom img {
+.side-section img {
   opacity: 0;
-  width: 100%;
 }
 
-.opportunities-anchor-bottom {
+.side-section-get-started-anchor {
   @include mixins.h3-bold;
   position: absolute;
   top: 40%;
@@ -38,10 +33,24 @@
   }
 
   @media (max-width: variables.$screen-xs) {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 }
 
-.opportunities-anchor-bottom a {
+.side-section-get-started-anchor a {
   color: variables.$primary-500;
+}
+
+.side-section-anchors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.side-section-anchor {
+  color: variables.$secondary-500;
+  @include mixins.subheading-bold;
+  margin: 0;
+  border-top: 1px variables.$neutral-50 solid;
+  padding-top: 16px;
 }

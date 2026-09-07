@@ -1,4 +1,4 @@
-import rectangleBlue from "@/../public/img/about/rectangle-blue.png";
+import rectangleBlue from "@/assets/img/about/rectangle-blue.png";
 import Blurb from "@/components/ui/blurb.jsx";
 import HeaderUnderline from "@/components/ui/header-underline.jsx";
 import { SectionType } from "@/utility/constants/theme";

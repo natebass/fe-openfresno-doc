@@ -70,15 +70,15 @@ Projects page layout.
 
     li {
       &:first-child {
-        list-style-image: url("/img/meeting-card/calender.svg");
+        list-style-image: url("/src/assets/img/meeting-card/calender.svg");
       }
 
       &:nth-child(2) {
-        list-style-image: url("/img/meeting-card/clock.svg");
+        list-style-image: url("/src/assets/img/meeting-card/clock.svg");
       }
 
       &:nth-child(3) {
-        list-style-image: url("/img/meeting-card/document-txt.svg");
+        list-style-image: url("/src/assets/img/meeting-card/document-txt.svg");
       }
     }
   }
@@ -191,7 +191,7 @@ Projects page layout.
     select {
       appearance: none;
       margin-top: 4px;
-      background-image: url("/img/form-element/chevron-down.svg");
+      background-image: url("/src/assets/img/form-element/chevron-down.svg");
       background-position: right 10px top 50%;
       background-size: 16px 16px;
       background-repeat: no-repeat;

@@ -1,4 +1,4 @@
-import searchIcon from "@/../public/img/form-element/search.svg";
+import searchIcon from "@/assets/img/form-element/search.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";

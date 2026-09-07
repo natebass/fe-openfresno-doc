@@ -1,6 +1,6 @@
-@use "../abstracts/variables.scss";
+@use "../abstracts/variables";
 @use "../abstracts/mixins";
-@use "../base/animations";
+@use "animations";
 
 html,
 body {

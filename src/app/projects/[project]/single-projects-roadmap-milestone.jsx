@@ -1,8 +1,8 @@
-import arrowCircleRight from "@/../public/img/project-roadmap/arrow-circle-right.svg";
-import checkCircle from "@/../public/img/project-roadmap/check-circle.svg";
-import circleStop from "@/../public/img/project-roadmap/circle-stop.svg";
-import line4 from "@/../public/img/project-roadmap/line-4.svg";
-import line5 from "@/../public/img/project-roadmap/line-5.svg";
+import arrowCircleRight from "@/assets/img/project-roadmap/arrow-circle-right.svg";
+import checkCircle from "@/assets/img/project-roadmap/check-circle.svg";
+import circleStop from "@/assets/img/project-roadmap/circle-stop.svg";
+import line4 from "@/assets/img/project-roadmap/line-4.svg";
+import line5 from "@/assets/img/project-roadmap/line-5.svg";
 import { SectionType } from "@/utility/constants/theme";
 import { titleCase } from "@/utility/string";
 import Image from "next/image";

@@ -1,7 +1,7 @@
-import arrowRightIcon from "@/../public/img/meeting-card/arrow-right.svg";
-import calendarIcon from "@/../public/img/meeting-card/calender.svg";
-import clockIcon from "@/../public/img/meeting-card/clock.svg";
-import documentIcon from "@/../public/img/meeting-card/document-txt.svg";
+import arrowRightIcon from "@/assets/img/meeting-card/arrow-right.svg";
+import calendarIcon from "@/assets/img/meeting-card/calender.svg";
+import clockIcon from "@/assets/img/meeting-card/clock.svg";
+import documentIcon from "@/assets/img/meeting-card/document-txt.svg";
 import HeaderUnderline from "@/components/ui/header-underline.jsx";
 import { SectionType } from "@/utility/constants/theme";
 import { getWednesday } from "@/utility/getWednesday.js";

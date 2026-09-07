@@ -1,6 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
-@use "../base/animations.scss";
+@use "../base/animations";
 
 /*
 Navigation bar.
@@ -131,12 +131,12 @@ It is made up of three sections.
   }
 
   &--collapsed {
-    background: url("/img/navbar/chevron_down.svg") no-repeat center right;
+    background: url("/src/assets/img/navbar/chevron_down.svg") no-repeat center right;
     padding-right: 30px;
   }
 
   &--extended {
-    background: url("/img/navbar/chevron_down.svg") no-repeat center right;
+    background: url("/src/assets/img/navbar/chevron_down.svg") no-repeat center right;
     padding-right: 30px;
   }
 

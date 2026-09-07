@@ -68,7 +68,7 @@ About page layout.
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/img/open_data_day_curved.png");
+  background-image: url("/src/assets/img/open_data_day_curved.png");
   background-position: right center;
   background-size: 45vw 40vw;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ About page layout.
 
 .opportunities-get-started {
   position: relative;
-  background-image: url("/img/about/rectangle.png");
+  background-image: url("/src/assets/img/about/rectangle.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

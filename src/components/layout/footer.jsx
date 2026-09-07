@@ -1,6 +1,6 @@
-import facebookIcon from "@/../public/img/socialmedia/facebook.svg";
-import twitterIcon from "@/../public/img/socialmedia/twitter.svg";
-import youtubeIcon from "@/../public/img/socialmedia/youtube.svg";
+import facebookIcon from "@/assets/img/socialmedia/facebook.svg";
+import twitterIcon from "@/assets/img/socialmedia/twitter.svg";
+import youtubeIcon from "@/assets/img/socialmedia/youtube.svg";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,4 +1,4 @@
-import rectangleBlue from "@/../public/img/about/rectangle-blue.png";
+import rectangleBlue from "@/assets/img/about/rectangle-blue.png";
 import Blurb from "@/components/ui/blurb.jsx";
 import { SectionType } from "@/utility/constants/theme";
 import Link from "next/link";

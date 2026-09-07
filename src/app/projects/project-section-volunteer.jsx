@@ -1,4 +1,4 @@
-import rectangleImage from "@/../public/img/about/rectangle.png";
+import rectangleImage from "@/assets/img/about/rectangle.png";
 import Image from "next/image";
 import Link from "next/link";
 

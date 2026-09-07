@@ -1,4 +1,4 @@
-import rectangleBlue from "@/../public/img/about/rectangle-blue.png";
+import rectangleBlue from "@/assets/img/about/rectangle-blue.png";
 import AboutSectionPositionList from "@/app/about/components/about-section-position-list";
 import Blurb from "@/components/ui/blurb.jsx";
 import HeadingPair from "@/components/ui/heading-pair.jsx";

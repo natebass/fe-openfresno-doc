@@ -1,7 +1,7 @@
 "use client";
-import meetingImage from "@/../public/img/about/meeting.png";
-import tabletImage from "@/../public/img/about/tablet.png";
-import towerBridgeSide from "@/../public/img/about/towerbridgeside.png";
+import meetingImage from "@/assets/img/about/meeting.png";
+import tabletImage from "@/assets/img/about/tablet.png";
+import towerBridgeSide from "@/assets/img/about/towerbridgeside.png";
 import PageContainer from "@/components/page-container.jsx";
 import { SectionType } from "@/utility/constants/theme";
 import Image from "next/image";

@@ -1,6 +1,6 @@
-import danFey from "@/../public/img/about/dan_fey.jpg";
-import maryFeyNorris from "@/../public/img/about/mary_fey_norris.jpg";
-import nateBass from "@/../public/img/about/nate_bass.jpg";
+import danFey from "@/assets/img/about/dan_fey.jpg";
+import maryFeyNorris from "@/assets/img/about/mary_fey_norris.jpg";
+import nateBass from "@/assets/img/about/nate_bass.jpg";
 import AboutSectionTeamMember from "@/app/about/components/about-section-team-member";
 import { SectionType } from "@/utility/constants/theme";
 
