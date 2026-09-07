@@ -1,4 +1,4 @@
-import getBasePath from "./src/integrations/gh-pages/getBasePath.mjs";
+import getBasePath from "./src/integrations/gh-pages/getBasePath.js";
 import createMDX from "@next/mdx";
 
 const basePath = getBasePath();
@@ -8,11 +8,19 @@ const nextConfig = {
   output: "export",
   basePath,
   assetPrefix: basePath,
+  reactCompiler: true,
+  typedRoutes: true,
   images: {
     unoptimized: true,
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
-  reactCompiler: true,
+  experimental: {
+    appNewScrollHandler: true,
+    inlineCss: true,
+    turbopackRustReactCompiler: true,
+    typedEnv: true,
+    useOffline: true,
+  },
 };
 
 const withMDX = createMDX({
