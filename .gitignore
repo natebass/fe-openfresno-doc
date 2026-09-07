@@ -668,3 +668,6 @@ next-env.d.ts
 storybook-static
 
 .claude
+/playwright-report/index.html
+/test-results/.last-run.json
+/.output.txt

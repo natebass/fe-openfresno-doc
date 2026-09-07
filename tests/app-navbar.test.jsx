@@ -1,12 +1,12 @@
-import NavbarE7e from "../src/components/layout/NavbarE7e";
+import Navbar from "../src/components/layout/navbar.jsx";
 import { render, screen } from "@testing-library/react";
 
-render(<NavbarE7e />);
+render(<Navbar />);
 
 /*
 Renders the AppNavbar component and checks if all link elements are rendering
 */
 
 test("Find Get Involved Text", () => {
-  expect(screen.getByText(/Get Involved/i)).toBeDefined();
+  expect(screen.getAllByText("Get Involved")).toHaveLength(3);
 });

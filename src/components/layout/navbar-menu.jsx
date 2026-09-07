@@ -84,10 +84,12 @@ export default function NavbarMenu({ className = "" }) {
             </Link>
           </li>
         ))}
-        <NavExtendedToggle
-          mobileNavPosition={nav === "secondary"}
-          toggleMobileNavPosition={toggleNav}
-        />
+        <li role="none">
+          <NavExtendedToggle
+            mobileNavPosition={nav === "secondary"}
+            toggleMobileNavPosition={toggleNav}
+          />
+        </li>
       </ul>
 
       {/* Mobile Navigation - Secondary */}
@@ -111,10 +113,12 @@ export default function NavbarMenu({ className = "" }) {
             </Link>
           </li>
         ))}
-        <NavExtendedToggle
-          mobileNavPosition={nav === "secondary"}
-          toggleMobileNavPosition={toggleNav}
-        />
+        <li role="none">
+          <NavExtendedToggle
+            mobileNavPosition={nav === "secondary"}
+            toggleMobileNavPosition={toggleNav}
+          />
+        </li>
       </ul>
 
       {/* Desktop Navigation */}

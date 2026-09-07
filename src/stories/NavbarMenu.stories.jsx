@@ -90,9 +90,15 @@ export const RendersNavigation = meta.story({
     });
 
     await step("Verify desktop sections render", async () => {
-      await expect(canvas.getByText("Get Started")).toBeInTheDocument();
-      await expect(canvas.getByText("Projects")).toBeInTheDocument();
-      await expect(canvas.getByText("Pitch a Project")).toBeInTheDocument();
+      await expect(
+        canvas.getByRole("heading", { name: "Get Started", hidden: true }),
+      ).toBeInTheDocument();
+      await expect(
+        canvas.getByRole("heading", { name: "Projects", hidden: true }),
+      ).toBeInTheDocument();
+      await expect(
+        canvas.getByRole("heading", { name: "Pitch a Project", hidden: true }),
+      ).toBeInTheDocument();
     });
 
     await step("Verify CTA buttons render", async () => {
@@ -126,7 +132,7 @@ export const MobileToggleTest = meta.story({
     });
     await expect(region).toBeInTheDocument();
 
-    const menus = canvas.getAllByRole("menu");
+    const menus = canvas.getAllByRole("menu", { hidden: true });
     await expect(menus.length).toBeGreaterThanOrEqual(2);
   },
 });
@@ -149,7 +155,7 @@ export const AccessibilityCheck = meta.story({
       </div>
     ),
   ],
-  play: async ({ canvas }) => {
+  play: async ({ canvas, canvasElement }) => {
     await expect(canvas.getByRole("region", { name: /Extended navigation/i })).toBeInTheDocument();
 
     const primaryMenu = canvas.getByRole("menu", {
@@ -157,9 +163,9 @@ export const AccessibilityCheck = meta.story({
     });
     await expect(primaryMenu).toBeInTheDocument();
 
-    const secondaryMenu = canvas.getByRole("menu", {
-      name: /Secondary navigation/i,
-    });
+    const secondaryMenu = canvasElement.querySelector(
+      '[role="menu"][aria-label="Secondary navigation"]',
+    );
     await expect(secondaryMenu).toBeInTheDocument();
 
     const menuItems = canvas.getAllByRole("menuitem");

@@ -1,9 +1,9 @@
 /** @type {import('vitest').VitestConfig} */
 // @vitest-environment jsdom
-import FooterE4d from "../src/components/layout/FooterE4d";
+import Footer from "../src/components/layout/footer.jsx";
 import { render, screen } from "@testing-library/react";
 
-render(<FooterE4d />);
+render(<Footer />);
 
 /*
 Renders the AppFooter component and checks if all link elements are rendering

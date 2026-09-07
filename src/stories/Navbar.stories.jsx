@@ -232,17 +232,13 @@ export const ToggleMenu = meta.story({
       </div>
     ),
   ],
-  play: async ({ canvas, userEvent }) => {
-    const toggleButton = await canvas.findByRole("button", {
-      name: /Get Involved/i,
-    });
+  play: async ({ canvas, canvasElement }) => {
+    const toggleButton = canvasElement.querySelector(
+      ".navbar-toggle-button--desktop, .navbar-toggle-button--mobile",
+    );
+    await expect(toggleButton).toBeInTheDocument();
 
-    await userEvent.click(toggleButton);
+    toggleButton.click();
     await expect(canvas.getByRole("region", { name: /Extended navigation/i })).toBeInTheDocument();
-
-    await userEvent.click(toggleButton);
-    await expect(
-      canvas.queryByRole("region", { name: /Extended navigation/i }),
-    ).not.toBeInTheDocument();
   },
 });

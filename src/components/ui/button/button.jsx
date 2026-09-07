@@ -17,16 +17,31 @@ import Link from "next/link";
  * @param {React.ReactNode} [props.textContent] - Deprecated fallback content when children are absent.
  * @returns {React.JSX.Element} A link or button.
  */
-const BaseButton = ({ className, href, target, onClick, children, textContent }) => {
+const BaseButton = ({
+  className,
+  href,
+  target,
+  onClick,
+  ariaLabel,
+  role,
+  children,
+  textContent,
+}) => {
   if (href) {
     return (
-      <Link className={className} href={href} target={target ? target : "_self"}>
+      <Link
+        className={className}
+        href={href}
+        target={target ? target : "_self"}
+        aria-label={ariaLabel}
+        role={role}
+      >
         {children || textContent}
       </Link>
     );
   }
   return (
-    <button className={className} onClick={onClick}>
+    <button className={className} onClick={onClick} aria-label={ariaLabel} role={role}>
       {children || textContent}
     </button>
   );
@@ -56,6 +71,7 @@ const NavToggle = ({ mobile, extendedMenuVisible, showExtendedMenu }) => {
       <BaseButton
         className="navbar-toggle-button--mobile"
         onClick={() => showExtendedMenu(!extendedMenuVisible)}
+        ariaLabel={extendedMenuVisible ? "Close navigation menu" : "Open navigation menu"}
       >
         {extendedMenuVisible ? <IconX /> : <HamburgerStaggered />}
       </BaseButton>
@@ -76,6 +92,7 @@ const NavExtendedToggle = ({ toggleMobileNavPosition, mobileNavPosition }) => {
       <BaseButton
         className="navbar-extended-toggle-button"
         onClick={() => toggleMobileNavPosition(!mobileNavPosition)}
+        role="menuitem"
       >
         <ChevronLeft className="-ms-1 me-1" height={20} width={20} />
         Back
@@ -86,6 +103,7 @@ const NavExtendedToggle = ({ toggleMobileNavPosition, mobileNavPosition }) => {
       <BaseButton
         className="navbar-extended-toggle-button"
         onClick={() => toggleMobileNavPosition(!mobileNavPosition)}
+        role="menuitem"
       >
         Get Involved
         <ChevronRight className="ms-1" height={20} width={20} />

@@ -199,12 +199,8 @@ export const RendersAllSVGs = meta.story({
       <LogoTextBlack width={200} height={80} />
     </PageContainer>
   ),
-  play: async ({ canvas }) => {
-    const svgs = canvas.getAllByRole("img", { hidden: true });
-    // If no role="img", check for SVG elements directly
-    if (svgs.length === 0) {
-      const container = canvas.getByText("", { selector: "div" });
-      await expect(container).toBeInTheDocument();
-    }
+  play: async ({ canvasElement }) => {
+    const svgs = canvasElement.querySelectorAll("svg");
+    await expect(svgs).toHaveLength(3);
   },
 });
