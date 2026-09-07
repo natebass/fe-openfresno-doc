@@ -34,13 +34,11 @@ jobs:
         node-version: [24]
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@v7
 
       # Use PNPM. Only npm and yarn are supported by default in actions/setup-node.
       - name: Setup pnpm
-        uses: pnpm/action-setup@v6.0.9
-        with:
-          version: 11
+        uses: pnpm/setup@v2
 
       - name: Detect package manager
         id: detect-package-manager
@@ -66,7 +64,7 @@ jobs:
           fi
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6.5.0
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
           # Enable caching for the detected package manager
@@ -83,7 +81,7 @@ jobs:
       # static_site_generator: next
 
       - name: Restore/Save Dependencies Cache
-        uses: actions/cache@v6.1.0
+        uses: actions/cache@v6
         with:
           # Use the default cache path for the detected package manager
           path: |
